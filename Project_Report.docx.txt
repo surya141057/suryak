@@ -1,0 +1,221 @@
+================================================================================
+                          PROJECT REPORT
+                    NEXUS - Student Innovation Club Website
+                         Stage 2: Functionality
+================================================================================
+
+--------------------------------------------------------------------------------
+STUDENT INFORMATION
+--------------------------------------------------------------------------------
+
+Name:                   Surya K
+Student ID:             suryakrishnamurthy14@gmail.com
+Course:                 MCA
+Semester:               3rd
+Submission Date:        11-01-2026
+
+--------------------------------------------------------------------------------
+PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+
+Project Title:          NEXUS - Student Innovation Club Website
+Project Type:           Static Website with JavaScript Functionality
+Technologies Used:      HTML5, CSS3, JavaScript (Vanilla)
+Total Pages:            5 (Home, About, Events, Gallery, Contact)
+
+--------------------------------------------------------------------------------
+LIVE DEPLOYMENT LINK
+--------------------------------------------------------------------------------
+
+GitHub Pages URL:       https://github.com/surya141057/suryak.git
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+PROJECT DESCRIPTION
+--------------------------------------------------------------------------------
+
+The NEXUS website is a comprehensive platform designed for a student innovation 
+club. It serves as the digital presence for the club, providing information 
+about the organization, upcoming events, photo gallery, and contact options 
+for prospective members.
+
+The website features a modern, responsive design with multiple interactive 
+JavaScript features that enhance user experience across all devices.
+
+--------------------------------------------------------------------------------
+FILE STRUCTURE
+--------------------------------------------------------------------------------
+
+Stage2_Functionality_suryak/
+├── index.html              - Home page
+├── about.html              - About page
+├── events.html             - Events page
+├── gallery.html            - Gallery page
+├── contact.html            - Contact page
+├── css/
+│   └── styles.css          - Main stylesheet
+├── js/
+│   └── main.js             - JavaScript functionality
+├── images/
+│   └── README.txt          - Image folder documentation
+└── Project_Report.docx.txt - This report
+
+--------------------------------------------------------------------------------
+JAVASCRIPT FEATURES IMPLEMENTED (6+ Features)
+--------------------------------------------------------------------------------
+
+1. MOBILE NAVIGATION TOGGLE
+   - Hamburger menu for mobile devices
+   - Animated toggle button
+   - Auto-close when clicking outside
+   - Location: All pages
+
+2. SCROLL TO TOP BUTTON
+   - Appears after scrolling 300px down
+   - Smooth scroll animation to top
+   - Located at bottom-right corner
+   - Location: All pages
+
+3. DARK MODE TOGGLE
+   - Switches between light and dark themes
+   - Saves preference in localStorage
+   - Persists across page loads
+   - Toast notification on toggle
+   - Location: All pages (bottom-left corner)
+
+4. ANIMATED STATISTICS COUNTERS
+   - Numbers animate when scrolled into view
+   - Uses Intersection Observer API
+   - Counts from 0 to target number
+   - Location: Home page (Stats section)
+
+5. GALLERY LIGHTBOX MODAL
+   - Click on images to open fullscreen modal
+   - Previous/Next navigation buttons
+   - Keyboard navigation (Arrow keys, Escape)
+   - Close on background click
+   - Location: Gallery page
+
+6. FORM VALIDATION
+   - Real-time validation on blur
+   - Visual feedback (green/red borders)
+   - Error messages for invalid inputs
+   - Success toast notification on submit
+   - Location: Contact page
+
+7. EVENT SEARCH & FILTER
+   - Search bar for text search
+   - Category filter buttons (All, Hackathon, Workshop, etc.)
+   - Instant filtering without page reload
+   - Location: Events page
+
+8. SCROLL REVEAL ANIMATIONS
+   - Elements animate when scrolled into view
+   - Staggered animation delays
+   - Uses Intersection Observer API
+   - Location: All pages (cards, team members, gallery items)
+
+9. TOAST NOTIFICATIONS
+   - Temporary notification messages
+   - Multiple types (success, error, info, warning)
+   - Auto-dismiss after 4 seconds
+   - Manual close button
+   - Location: All pages
+
+10. TYPING CURSOR ANIMATION
+    - Blinking cursor effect on hero title
+    - CSS animation for cursor blink
+    - Location: Home page
+
+--------------------------------------------------------------------------------
+CSS FEATURES & RESPONSIVENESS
+--------------------------------------------------------------------------------
+
+1. CSS Custom Properties (Variables)
+   - Color scheme management
+   - Consistent spacing and typography
+   - Easy theme customization
+
+2. Responsive Design
+   - Mobile-first approach
+   - Breakpoints: 480px, 768px, 992px
+   - Flexible grid layouts
+   - Responsive navigation
+
+3. CSS Animations
+   - Fade-in animations
+   - Hover effects on cards and buttons
+   - Pulse animation on CTA buttons
+   - Floating geometric shapes
+
+4. Dark Mode Styles
+   - Complete color scheme override
+   - Smooth transition between themes
+
+--------------------------------------------------------------------------------
+BROWSER COMPATIBILITY
+--------------------------------------------------------------------------------
+
+Tested on:
+- Google Chrome (Latest)
+- Mozilla Firefox (Latest)
+- Microsoft Edge (Latest)
+- Safari (Latest)
+- Mobile browsers (iOS Safari, Android Chrome)
+
+--------------------------------------------------------------------------------
+CHALLENGES FACED & SOLUTIONS
+--------------------------------------------------------------------------------
+
+1. Challenge: Making the lightbox work with placeholder images
+   Solution: Created dynamic content extraction from DOM elements
+
+2. Challenge: Form validation without backend
+   Solution: Implemented client-side validation with regex patterns
+
+3. Challenge: Preserving dark mode preference
+   Solution: Used localStorage to save and retrieve theme preference
+
+4. Challenge: Event filter with multiple criteria
+   Solution: Combined text search and category filter with AND logic
+
+--------------------------------------------------------------------------------
+FUTURE ENHANCEMENTS
+--------------------------------------------------------------------------------
+
+1. Backend integration for form submission
+2. User authentication system
+3. Event registration functionality
+4. Real image gallery with actual photos
+5. Blog/News section
+6. Member dashboard
+
+--------------------------------------------------------------------------------
+REFERENCES
+--------------------------------------------------------------------------------
+
+1. MDN Web Docs - https://developer.mozilla.org
+2. CSS-Tricks - https://css-tricks.com
+3. Google Fonts - https://fonts.google.com
+4. W3Schools - https://www.w3schools.com
+
+--------------------------------------------------------------------------------
+DECLARATION
+--------------------------------------------------------------------------------
+
+I hereby declare that this project is my own work and has not been submitted 
+elsewhere for academic credit. All external resources and references have been 
+properly cited.
+
+
+Signature: Surya.k
+
+Date: 11-01-2026
+
+================================================================================
+                              END OF REPORT
+================================================================================
+

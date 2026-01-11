@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        ============================================
+        NEXUS - Student Innovation Club
+        Gallery Page (gallery.html)
+        Stage 2: Functionality
+        Author: Surya K
+        Description: Photo gallery showcasing club activities
+        Features: Lightbox modal for viewing images via JavaScript
+        ============================================
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse through photos and memories from NEXUS events, workshops, and activities.">
+    
+    <!-- Page Title -->
+    <title>Gallery | NEXUS - Student Innovation Club</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 
+        ============================================
+        HEADER SECTION
+        Navigation bar consistent across all pages
+        ============================================
+    -->
+    <header class="header">
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">N</div>
+                <span class="nav-logo-text">NEXUS</span>
+            </a>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- 
+        ============================================
+        MAIN CONTENT AREA
+        ============================================
+    -->
+    <main>
+        <!-- 
+            PAGE HEADER
+            Banner section for the Gallery page
+        -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Gallery</h1>
+                <p>Capturing moments of innovation, collaboration, and achievement</p>
+            </div>
+        </section>
+
+        <!-- 
+            GALLERY SECTION
+            Photo grid showcasing club activities
+            Click on images to open lightbox modal (JavaScript feature)
+            Note: Using placeholder styling since actual images are not available
+        -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Moments</h2>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-lg); color: var(--color-gray);">
+                    Click on any image to view it in full screen. Use arrow keys or buttons to navigate.
+                </p>
+                
+                <!-- Gallery Grid - Lightbox enabled via JavaScript -->
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1: Hackathon -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder">
+                            💻
+                            <span>Hackathon 2024</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Tech Innovation Hackathon - Fall 2024</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 2: Workshop -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #e76f51, #f4a261);">
+                            🔧
+                            <span>Workshop Session</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Hands-on Coding Workshop</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 3: Team Photo -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #2a9d8f, #264653);">
+                            👥
+                            <span>Team Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">NEXUS Team 2024</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 4: Conference -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
+                            🎤
+                            <span>Tech Conference</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Annual Tech Conference</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 5: Award Ceremony -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #fdcb6e, #e17055);">
+                            🏆
+                            <span>Awards Night</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Award Ceremony - Best Innovation</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 6: Networking -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #00b894, #00cec9);">
+                            🤝
+                            <span>Networking</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Industry Networking Night</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 7: Project Demo -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #e84393, #fd79a8);">
+                            🚀
+                            <span>Project Demo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Student Project Showcase</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 8: Robotics Lab -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #0984e3, #74b9ff);">
+                            🤖
+                            <span>Robotics Lab</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Robotics Club Session</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 9: Mentor Session -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #636e72, #2d3436);">
+                            👨‍🏫
+                            <span>Mentorship</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Industry Mentor Session</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 10: Celebration -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #ff7675, #d63031);">
+                            🎉
+                            <span>Celebration</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">End of Year Celebration</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 11: Coding Session -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #81ecec, #00cec9);">
+                            ⌨️
+                            <span>Coding Session</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Late Night Coding Marathon</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 12: Guest Speaker -->
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder" style="background: linear-gradient(135deg, #a55eea, #8854d0);">
+                            🎓
+                            <span>Guest Speaker</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <p class="gallery-caption">Guest Speaker from Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            EVENT HIGHLIGHTS SECTION
+            Featured moments from major events
+        -->
+        <section class="section" style="background-color: var(--color-gray-light);">
+            <div class="container">
+                <h2 class="section-title">Event Highlights</h2>
+                
+                <div class="grid grid-3">
+                    <!-- Highlight 1 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🏆</div>
+                        <div class="card-content">
+                            <h3 class="card-title">Hackathon Winners 2024</h3>
+                            <p class="card-text">
+                                Team "InnovateTech" won first place with their AI-powered 
+                                campus navigation app that helps students with disabilities.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Highlight 2 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🎯</div>
+                        <div class="card-content">
+                            <h3 class="card-title">500 Member Milestone</h3>
+                            <p class="card-text">
+                                We celebrated reaching 500 active members with a special 
+                                event featuring alumni speakers and networking opportunities.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Highlight 3 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🌟</div>
+                        <div class="card-content">
+                            <h3 class="card-title">Best Campus Club Award</h3>
+                            <p class="card-text">
+                                NEXUS was recognized as the Best Technical Club on campus 
+                                for outstanding contribution to student development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            VIDEO HIGHLIGHTS SECTION
+            Placeholder for video content
+        -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Video Highlights</h2>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
+                    Watch highlights from our events and hear from our members about their experiences.
+                </p>
+                
+                <div class="grid grid-2">
+                    <!-- Video Placeholder 1 -->
+                    <div class="card">
+                        <div class="card-image-placeholder" style="height: 250px; font-size: 4rem;">
+                            ▶️
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Hackathon 2024 Recap</h3>
+                            <p class="card-text">
+                                A 3-minute recap of our biggest hackathon featuring interviews 
+                                with participants and winning teams.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Placeholder 2 -->
+                    <div class="card">
+                        <div class="card-image-placeholder" style="height: 250px; font-size: 4rem; background: linear-gradient(135deg, #e76f51, #f4a261);">
+                            ▶️
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Member Testimonials</h3>
+                            <p class="card-text">
+                                Hear directly from our members about how NEXUS has helped 
+                                them grow personally and professionally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            SHARE YOUR PHOTOS CTA
+            Encourage members to submit photos
+        -->
+        <section class="section" style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: white;">
+            <div class="container text-center">
+                <h2 style="color: white;">Share Your Moments!</h2>
+                <p style="max-width: 600px; margin: var(--spacing-sm) auto var(--spacing-md); opacity: 0.9;">
+                    Have photos from NEXUS events? We'd love to feature them in our gallery! 
+                    Submit your photos and be part of our visual story.
+                </p>
+                <a href="contact.html" class="btn btn-primary pulse">Submit Your Photos</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+        ============================================
+        FOOTER SECTION
+        Common footer consistent across all pages
+        ============================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Column -->
+                <div class="footer-section">
+                    <h4>NEXUS</h4>
+                    <p>
+                        A student innovation club dedicated to fostering creativity, 
+                        technology exploration, and collaborative learning.
+                    </p>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📍 Innovation Hub, Building C</p>
+                    <p>📧 nexus@college.edu</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+                
+                <!-- Social Media Column -->
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEXUS Student Innovation Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file containing all interactive features -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

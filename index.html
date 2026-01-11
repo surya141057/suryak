@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        ============================================
+        NEXUS - Student Innovation Club
+        Home Page (index.html)
+        Stage 2: Functionality
+        Author: Surya K
+        Description: Landing page showcasing the club
+        with interactive JavaScript features
+        ============================================
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEXUS - A student innovation club dedicated to fostering creativity, technology, and collaboration.">
+    
+    <!-- Page Title -->
+    <title>NEXUS | Student Innovation Club</title>
+    
+    <!-- Google Fonts - Playfair Display & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 
+        ============================================
+        HEADER SECTION
+        Contains the navigation bar with logo and menu
+        Mobile menu toggle handled by JavaScript
+        ============================================
+    -->
+    <header class="header">
+        <nav class="nav container">
+            <!-- Logo Section -->
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">N</div>
+                <span class="nav-logo-text">NEXUS</span>
+            </a>
+            
+            <!-- Navigation Menu - Links to all pages -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle Button (hamburger icon) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- 
+        ============================================
+        MAIN CONTENT AREA
+        ============================================
+    -->
+    <main>
+        <!-- 
+            HERO SECTION
+            Main banner with welcome message and call-to-action
+            Features typing animation via JavaScript
+        -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Where Ideas <span class="text-accent">Ignite</span> & Innovation Thrives</h1>
+                    <p class="hero-subtitle">
+                        Join NEXUS, the premier student innovation club dedicated to fostering creativity, 
+                        collaboration, and cutting-edge technology exploration. Be part of a community that 
+                        turns ambitious ideas into reality.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary pulse">Join Our Club</a>
+                        <a href="about.html" class="btn btn-secondary" style="color: white; border-color: white;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            STATISTICS SECTION
+            Displaying key numbers about the club
+            Numbers animate when scrolled into view (JS feature)
+        -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Active Members</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Events Organized</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Projects Launched</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            FEATURES SECTION
+            Highlighting what makes the club special
+            Cards animate on scroll (JS feature)
+        -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Why Join NEXUS?</h2>
+                
+                <div class="grid grid-3">
+                    <!-- Feature Card 1: Innovation -->
+                    <div class="card fade-in delay-1">
+                        <div class="card-image-placeholder">💡</div>
+                        <div class="card-content">
+                            <h3 class="card-title">Innovative Projects</h3>
+                            <p class="card-text">
+                                Work on cutting-edge projects ranging from AI and robotics to 
+                                sustainable tech solutions. Turn your creative ideas into impactful innovations.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Card 2: Community -->
+                    <div class="card fade-in delay-2">
+                        <div class="card-image-placeholder">🤝</div>
+                        <div class="card-content">
+                            <h3 class="card-title">Vibrant Community</h3>
+                            <p class="card-text">
+                                Connect with like-minded individuals who share your passion for 
+                                technology and innovation. Build lasting friendships and professional networks.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Card 3: Learning -->
+                    <div class="card fade-in delay-3">
+                        <div class="card-image-placeholder">📚</div>
+                        <div class="card-content">
+                            <h3 class="card-title">Continuous Learning</h3>
+                            <p class="card-text">
+                                Attend workshops, seminars, and bootcamps led by industry experts. 
+                                Stay ahead of the curve with hands-on learning experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            UPCOMING EVENTS PREVIEW SECTION
+            Showing a few upcoming events
+        -->
+        <section class="section" style="background-color: var(--color-gray-light);">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                
+                <div class="grid grid-2">
+                    <!-- Event Card 1 -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Jan</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Tech Innovation Hackathon</h3>
+                            <p class="event-location">📍 Main Auditorium, Building A</p>
+                            <p class="event-description">48-hour hackathon to build solutions for real-world problems.</p>
+                            <span class="event-tag">Hackathon</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Event Card 2 -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">Jan</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>AI & Machine Learning Workshop</h3>
+                            <p class="event-location">📍 Computer Lab 3, Tech Building</p>
+                            <p class="event-description">Hands-on workshop on building ML models from scratch.</p>
+                            <span class="event-tag">Workshop</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="margin-top: var(--spacing-md);">
+                    <a href="events.html" class="btn btn-primary">View All Events</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            CALL TO ACTION SECTION
+            Encouraging visitors to join
+        -->
+        <section class="section">
+            <div class="container text-center">
+                <h2 class="section-title">Ready to Make an Impact?</h2>
+                <p style="max-width: 600px; margin: 0 auto var(--spacing-md);">
+                    Whether you're a beginner or an experienced innovator, there's a place for you at NEXUS. 
+                    Join our community and start your journey of innovation today!
+                </p>
+                <div style="display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary">Join Now</a>
+                    <a href="gallery.html" class="btn btn-secondary">See Our Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+        ============================================
+        FOOTER SECTION
+        Common footer with links and contact info
+        ============================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Column -->
+                <div class="footer-section">
+                    <h4>NEXUS</h4>
+                    <p>
+                        A student innovation club dedicated to fostering creativity, 
+                        technology exploration, and collaborative learning.
+                    </p>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📍 Innovation Hub, Building C</p>
+                    <p>📧 nexus@college.edu</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+                
+                <!-- Social Media Column -->
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEXUS Student Innovation Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+        ============================================
+        EXTERNAL JAVASCRIPT FILE
+        Contains all interactive functionality:
+        - Mobile navigation toggle
+        - Scroll to top button
+        - Dark mode toggle
+        - Animated counters
+        - Gallery lightbox
+        - Form validation
+        - Event filtering
+        - Typing animation
+        - Scroll reveal animations
+        - Toast notifications
+        ============================================
+    -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

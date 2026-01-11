@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        ============================================
+        NEXUS - Student Innovation Club
+        About Page (about.html)
+        Stage 2: Functionality
+        Author: Surya K
+        Description: Information about the club, mission, and team
+        ============================================
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about NEXUS - our mission, vision, history, and the team behind the innovation.">
+    
+    <!-- Page Title -->
+    <title>About Us | NEXUS - Student Innovation Club</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 
+        ============================================
+        HEADER SECTION
+        Navigation bar consistent across all pages
+        ============================================
+    -->
+    <header class="header">
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">N</div>
+                <span class="nav-logo-text">NEXUS</span>
+            </a>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- 
+        ============================================
+        MAIN CONTENT AREA
+        ============================================
+    -->
+    <main>
+        <!-- 
+            PAGE HEADER
+            Banner section for the About page
+        -->
+        <section class="page-header">
+            <div class="container">
+                <h1>About NEXUS</h1>
+                <p>Discover our story, mission, and the passionate team behind the innovation</p>
+            </div>
+        </section>
+
+        <!-- 
+            ABOUT INTRODUCTION SECTION
+            Overview of the club with image and description
+        -->
+        <section class="section">
+            <div class="container">
+                <div class="about-intro">
+                    <!-- About Image Placeholder -->
+                    <div class="about-image-placeholder">🚀</div>
+                    
+                    <!-- About Content -->
+                    <div class="about-content">
+                        <h2>Who We Are</h2>
+                        <p>
+                            NEXUS is a vibrant student innovation club founded in 2019 with a simple yet 
+                            powerful mission: to create a space where curious minds can explore, experiment, 
+                            and excel in the world of technology and innovation.
+                        </p>
+                        <p>
+                            What started as a small group of passionate students has grown into a thriving 
+                            community of over 500 members from diverse academic backgrounds. We believe that 
+                            innovation knows no boundaries, and the best ideas often emerge at the intersection 
+                            of different disciplines.
+                        </p>
+                        
+                        <!-- Key Features List -->
+                        <ul class="feature-list">
+                            <li>Student-led initiatives and projects</li>
+                            <li>Workshops and technical training sessions</li>
+                            <li>Industry partnerships and mentorship programs</li>
+                            <li>Hackathons and innovation competitions</li>
+                            <li>Networking events with professionals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            MISSION & VISION SECTION
+            Core values and goals of the club
+        -->
+        <section class="section" style="background-color: var(--color-gray-light);">
+            <div class="container">
+                <h2 class="section-title">Our Mission & Vision</h2>
+                
+                <div class="grid grid-2">
+                    <!-- Mission Card -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🎯</div>
+                        <div class="card-content">
+                            <h3 class="card-title">Our Mission</h3>
+                            <p class="card-text">
+                                To empower students with the knowledge, skills, and resources needed to 
+                                transform innovative ideas into impactful solutions. We strive to create 
+                                an inclusive environment where creativity flourishes and collaboration 
+                                leads to breakthroughs.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Vision Card -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🔭</div>
+                        <div class="card-content">
+                            <h3 class="card-title">Our Vision</h3>
+                            <p class="card-text">
+                                To be the leading student innovation hub that nurtures the next generation 
+                                of tech leaders, entrepreneurs, and change-makers. We envision a future 
+                                where every student has the opportunity to innovate and make a difference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            CORE VALUES SECTION
+            What principles guide the club
+        -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Core Values</h2>
+                
+                <div class="grid grid-4">
+                    <!-- Value 1: Innovation -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">💡</div>
+                            <h3 class="card-title">Innovation</h3>
+                            <p class="card-text">We embrace new ideas and challenge conventional thinking.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Value 2: Collaboration -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🤝</div>
+                            <h3 class="card-title">Collaboration</h3>
+                            <p class="card-text">We believe great things happen when people work together.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Value 3: Excellence -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">⭐</div>
+                            <h3 class="card-title">Excellence</h3>
+                            <p class="card-text">We strive for the highest standards in everything we do.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Value 4: Inclusivity -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🌍</div>
+                            <h3 class="card-title">Inclusivity</h3>
+                            <p class="card-text">We welcome diverse perspectives and backgrounds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            TEAM SECTION
+            Showcasing the leadership team
+            Cards animate on scroll via JavaScript
+        -->
+        <section class="section" style="background-color: var(--color-gray-light);">
+            <div class="container">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
+                    Our dedicated team of student leaders works tirelessly to create amazing 
+                    experiences and opportunities for all members.
+                </p>
+                
+                <div class="team-grid">
+                    <!-- Team Member 1: President -->
+                    <div class="card team-card">
+                        <div class="team-avatar">AS</div>
+                        <h3 class="team-name">Alex Smith</h3>
+                        <p class="team-role">President</p>
+                        <p class="card-text" style="font-size: 0.85rem; margin-top: var(--spacing-xs);">
+                            Computer Science senior passionate about AI and entrepreneurship.
+                        </p>
+                    </div>
+                    
+                    <!-- Team Member 2: Vice President -->
+                    <div class="card team-card">
+                        <div class="team-avatar">MJ</div>
+                        <h3 class="team-name">Maria Johnson</h3>
+                        <p class="team-role">Vice President</p>
+                        <p class="card-text" style="font-size: 0.85rem; margin-top: var(--spacing-xs);">
+                            Engineering major focused on sustainable technology solutions.
+                        </p>
+                    </div>
+                    
+                    <!-- Team Member 3: Technical Lead -->
+                    <div class="card team-card">
+                        <div class="team-avatar">DL</div>
+                        <h3 class="team-name">David Lee</h3>
+                        <p class="team-role">Technical Lead</p>
+                        <p class="card-text" style="font-size: 0.85rem; margin-top: var(--spacing-xs);">
+                            Full-stack developer with expertise in cloud computing.
+                        </p>
+                    </div>
+                    
+                    <!-- Team Member 4: Events Coordinator -->
+                    <div class="card team-card">
+                        <div class="team-avatar">SP</div>
+                        <h3 class="team-name">Sarah Patel</h3>
+                        <p class="team-role">Events Coordinator</p>
+                        <p class="card-text" style="font-size: 0.85rem; margin-top: var(--spacing-xs);">
+                            Business student with a flair for organizing impactful events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            HISTORY TIMELINE SECTION
+            Brief history of the club
+        -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Journey</h2>
+                
+                <div class="grid grid-3">
+                    <!-- Year 2019 -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div class="text-accent" style="font-size: 2rem; font-weight: bold;">2019</div>
+                            <h3 class="card-title">The Beginning</h3>
+                            <p class="card-text">
+                                NEXUS was founded by 10 passionate students with a vision to create 
+                                a platform for innovation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Year 2021 -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div class="text-accent" style="font-size: 2rem; font-weight: bold;">2021</div>
+                            <h3 class="card-title">Rapid Growth</h3>
+                            <p class="card-text">
+                                Membership grew to 200+ students. Launched first hackathon with 
+                                50+ participating teams.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Year 2024 -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div class="text-accent" style="font-size: 2rem; font-weight: bold;">2024</div>
+                            <h3 class="card-title">Today</h3>
+                            <p class="card-text">
+                                500+ active members, 15+ awards won, and partnerships with leading 
+                                tech companies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            JOIN CTA SECTION
+            Call to action to join the club
+        -->
+        <section class="section" style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: white;">
+            <div class="container text-center">
+                <h2 style="color: white;">Want to Be Part of Our Story?</h2>
+                <p style="max-width: 600px; margin: var(--spacing-sm) auto var(--spacing-md); opacity: 0.9;">
+                    Join NEXUS today and become part of a community that's shaping the future 
+                    through innovation, collaboration, and continuous learning.
+                </p>
+                <a href="contact.html" class="btn btn-primary pulse">Join NEXUS Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+        ============================================
+        FOOTER SECTION
+        Common footer consistent across all pages
+        ============================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Column -->
+                <div class="footer-section">
+                    <h4>NEXUS</h4>
+                    <p>
+                        A student innovation club dedicated to fostering creativity, 
+                        technology exploration, and collaborative learning.
+                    </p>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📍 Innovation Hub, Building C</p>
+                    <p>📧 nexus@college.edu</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+                
+                <!-- Social Media Column -->
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEXUS Student Innovation Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file containing all interactive features -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

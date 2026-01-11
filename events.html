@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        ============================================
+        NEXUS - Student Innovation Club
+        Events Page (events.html)
+        Stage 2: Functionality
+        Author: Surya K
+        Description: Upcoming and past events organized by the club
+        Features: Search/filter functionality via JavaScript
+        ============================================
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore upcoming and past events organized by NEXUS - hackathons, workshops, seminars, and more.">
+    
+    <!-- Page Title -->
+    <title>Events | NEXUS - Student Innovation Club</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 
+        ============================================
+        HEADER SECTION
+        Navigation bar consistent across all pages
+        ============================================
+    -->
+    <header class="header">
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">N</div>
+                <span class="nav-logo-text">NEXUS</span>
+            </a>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="events.html" class="nav-link active">Events</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- 
+        ============================================
+        MAIN CONTENT AREA
+        ============================================
+    -->
+    <main>
+        <!-- 
+            PAGE HEADER
+            Banner section for the Events page
+        -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Events</h1>
+                <p>Discover our upcoming activities and explore our past successes</p>
+            </div>
+        </section>
+
+        <!-- 
+            UPCOMING EVENTS SECTION
+            List of future events
+            Search and filter functionality added via JavaScript
+        -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <!-- Filter controls will be injected here by JavaScript -->
+                
+                <div class="grid grid-2">
+                    <!-- Event 1: Hackathon -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Jan</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Tech Innovation Hackathon 2025</h3>
+                            <p class="event-location">📍 Main Auditorium, Building A</p>
+                            <p class="event-description">
+                                Join us for a 48-hour hackathon where teams compete to build 
+                                innovative solutions for real-world problems. Open to all skill levels 
+                                with mentorship available.
+                            </p>
+                            <span class="event-tag">Hackathon</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2: AI Workshop -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">Jan</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>AI & Machine Learning Workshop</h3>
+                            <p class="event-location">📍 Computer Lab 3, Tech Building</p>
+                            <p class="event-description">
+                                A hands-on workshop covering the fundamentals of machine learning. 
+                                Learn to build your first ML model using Python and popular libraries.
+                            </p>
+                            <span class="event-tag">Workshop</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 3: Guest Lecture -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">05</span>
+                            <span class="month">Feb</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Industry Expert Talk: Future of Tech</h3>
+                            <p class="event-location">📍 Conference Hall, Admin Block</p>
+                            <p class="event-description">
+                                Guest speaker from a leading tech company shares insights on 
+                                emerging technologies and career opportunities in the industry.
+                            </p>
+                            <span class="event-tag">Seminar</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 4: Web Dev Bootcamp -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">Feb</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Web Development Bootcamp</h3>
+                            <p class="event-location">📍 Innovation Hub, Building C</p>
+                            <p class="event-description">
+                                A 3-day intensive bootcamp covering HTML, CSS, JavaScript, and 
+                                modern frameworks. Perfect for beginners and intermediate developers.
+                            </p>
+                            <span class="event-tag">Workshop</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 5: Networking Night -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">20</span>
+                            <span class="month">Feb</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Tech Networking Night</h3>
+                            <p class="event-location">📍 Student Center, Main Campus</p>
+                            <p class="event-description">
+                                Connect with industry professionals, alumni, and fellow students. 
+                                Great opportunity for internship and job seekers.
+                            </p>
+                            <span class="event-tag">Networking</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 6: Startup Pitch -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">01</span>
+                            <span class="month">Mar</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Startup Pitch Competition</h3>
+                            <p class="event-location">📍 Entrepreneurship Center</p>
+                            <p class="event-description">
+                                Present your startup ideas to a panel of investors and entrepreneurs. 
+                                Top teams win funding and mentorship opportunities.
+                            </p>
+                            <span class="event-tag">Hackathon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            PAST EVENTS SECTION
+            Highlights from previous events
+        -->
+        <section class="section" style="background-color: var(--color-gray-light);">
+            <div class="container">
+                <h2 class="section-title">Past Events Highlights</h2>
+                
+                <div class="grid grid-3">
+                    <!-- Past Event Card 1 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🏆</div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span>November 2024</span>
+                                <span>Hackathon</span>
+                            </div>
+                            <h3 class="card-title">Fall Innovation Challenge</h3>
+                            <p class="card-text">
+                                Over 100 students participated in our biggest hackathon yet. 
+                                The winning team developed an app to help reduce food waste on campus.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Event Card 2 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🎓</div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span>October 2024</span>
+                                <span>Workshop</span>
+                            </div>
+                            <h3 class="card-title">Cloud Computing Workshop</h3>
+                            <p class="card-text">
+                                Students learned to deploy applications on AWS and Azure. 
+                                Participants received certifications upon completion.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Event Card 3 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🎤</div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span>September 2024</span>
+                                <span>Conference</span>
+                            </div>
+                            <h3 class="card-title">NEXUS Tech Conference</h3>
+                            <p class="card-text">
+                                Our annual conference featured speakers from Google, Microsoft, 
+                                and local startups discussing the future of technology.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Event Card 4 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🤖</div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span>August 2024</span>
+                                <span>Workshop</span>
+                            </div>
+                            <h3 class="card-title">Robotics Introduction</h3>
+                            <p class="card-text">
+                                Beginners learned the basics of robotics and built their 
+                                first Arduino-powered robot in this hands-on session.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Event Card 5 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">🎮</div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span>July 2024</span>
+                                <span>Jam</span>
+                            </div>
+                            <h3 class="card-title">Summer Game Jam</h3>
+                            <p class="card-text">
+                                Teams created original video games in 72 hours. 
+                                Games ranged from puzzle games to action adventures.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Event Card 6 -->
+                    <div class="card">
+                        <div class="card-image-placeholder">📱</div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span>June 2024</span>
+                                <span>Bootcamp</span>
+                            </div>
+                            <h3 class="card-title">Mobile App Development</h3>
+                            <p class="card-text">
+                                A week-long bootcamp on building mobile apps using 
+                                React Native. Students published apps to app stores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            EVENT CATEGORIES SECTION
+            Types of events we organize
+        -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Event Categories</h2>
+                
+                <div class="grid grid-4">
+                    <!-- Category 1 -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">💻</div>
+                            <h3 class="card-title">Hackathons</h3>
+                            <p class="card-text">Intensive coding competitions to build innovative solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 2 -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🔧</div>
+                            <h3 class="card-title">Workshops</h3>
+                            <p class="card-text">Hands-on learning sessions on various technologies.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 3 -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🎙️</div>
+                            <h3 class="card-title">Seminars</h3>
+                            <p class="card-text">Expert talks and industry insights from professionals.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 4 -->
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🌐</div>
+                            <h3 class="card-title">Networking</h3>
+                            <p class="card-text">Connect with peers, mentors, and industry leaders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            NEWSLETTER SIGNUP CTA
+            Encourage visitors to stay updated
+        -->
+        <section class="section" style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)); color: white;">
+            <div class="container text-center">
+                <h2 style="color: white;">Never Miss an Event!</h2>
+                <p style="max-width: 600px; margin: var(--spacing-sm) auto var(--spacing-md); opacity: 0.9;">
+                    Stay updated with our latest events, workshops, and opportunities. 
+                    Join our mailing list and be the first to know!
+                </p>
+                <a href="contact.html" class="btn btn-primary pulse">Subscribe to Updates</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+        ============================================
+        FOOTER SECTION
+        Common footer consistent across all pages
+        ============================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Column -->
+                <div class="footer-section">
+                    <h4>NEXUS</h4>
+                    <p>
+                        A student innovation club dedicated to fostering creativity, 
+                        technology exploration, and collaborative learning.
+                    </p>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info Column -->
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📍 Innovation Hub, Building C</p>
+                    <p>📧 nexus@college.edu</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+                
+                <!-- Social Media Column -->
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEXUS Student Innovation Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file containing all interactive features -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

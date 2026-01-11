@@ -27,11 +27,19 @@ Total Pages:            5 (Home, About, Events, Gallery, Contact)
 LIVE DEPLOYMENT LINK
 --------------------------------------------------------------------------------
 
-GitHub Pages URL:       https://github.com/surya141057/suryak.git
+GitHub Pages URL:       https://surya141057.github.io/suryak/
 
+GitHub Repository:      https://github.com/surya141057/suryak
 
 --------------------------------------------------------------------------------
+LOGIN CREDENTIALS (If Applicable)
+--------------------------------------------------------------------------------
 
+Email:                  N/A (No login system implemented)
+Password:               N/A
+
+Note: This website does not require user authentication. All pages are 
+publicly accessible.
 
 --------------------------------------------------------------------------------
 PROJECT DESCRIPTION

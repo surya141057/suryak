@@ -23,7 +23,7 @@ Project Type:           Static Website with JavaScript Functionality
 Technologies Used:      HTML5, CSS3, JavaScript (Vanilla)
 Total Pages:            5 (Home, About, Events, Gallery, Contact)
 
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 LIVE DEPLOYMENT LINK
 --------------------------------------------------------------------------------
 
